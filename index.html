@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>SugarCrumb — Bakery & Baking Shop</title>
+  <meta name="description" content="SugarCrumb— handcrafted cakes, cupcakes and cookies. Beautiful bakery e‑commerce template." />
+ 
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav">
+      <div class="brand">
+        <div class="logo">SugarCrumb</div>
+        <div class="tag">Handcrafted Cakes &amp; Cookies</div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Home -->
+    <section id="home" class="hero">
+      <div class="hero-card fade-in">
+        <h1>Sweet moments, handcrafted daily</h1>
+        <h5 class="lead">We bake cake memories — from birthdays to anniversaries. Explore our selection of signature cakes, gourmet cupcakes and classic sweets made with love.</h5>
+
+        <div class="featured-grid" aria-hidden>
+          <div class="product-tile">
+            <img  src="chocolate-cake-picture.JPEG" alt="Choco Cake">
+            <div align=center >Signature Chocolate Cake</div>
+          </div>
+          <div class="product-tile">
+            <img  src="vanilla.JPG" alt="Cupcake">
+            <div align=center >Vanilla Cupcakes</div>
+          </div>
+          <div class="product-tile">
+            <img  src="cookies" alt="Cookies">
+            <div align=center>Handmade Cookies</div>
+          </div>
+        </div>
+
+        <div style="margin-top:20px; display:flex; gap:10px; align-items:center">
+          <a class="cta" href="#shop">Browse Collection</a>
+        </div>
+      </div>
+
+      <aside class="promo-card fade-in">
+        <h6>Fresh today — Make your order for same-day pickup</h6>
+        <h2 style="margin:4">Seasonal Flavors</h2><br>
+        <p style="margin:0; color:var(--muted)">Peanut butter • Salted Caramel • Chocochip</p><br>
+		<h5 style="margin:2">Freshly baked happiness, one bite at a time </h5> <br>
+        <a class="cta" href="#shop">Order Now</a>
+      </aside>
+    </section>
+
+    <!-- Shop -->
+    <section id="shop" class="section">
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:20px; margin-bottom:12px">
+        <h2 style="margin:0; font-family:'Playfair Display', serif">Shop</h2>
+
+      </div>
+
+      <div class="shop-wrap">
+        <aside class="filters">
+          <h3>Filters</h3>
+          <div class="filter-group">
+            <label>Category</label>
+            <select id="filter-category">
+              <option value="all">All</option>
+              <option value="cakes">Cakes</option>
+              <option value="cupcakes">Cupcakes</option>
+              <option value="sweets">Cookies</option>
+			  <option value="donut">Donuts</option>
+            </select>
+          </div>
+
+
+          <div class="filter-group">
+            <label>Flavor</label>
+            <select id="filter-flavor">
+              <option value="all">All</option>
+              <option>Chocolate</option>
+              <option>Vanilla</option>
+              <option>Strawberry</option>
+              <option>Caramel</option>
+			  <option>Peanut butter</option>
+            </select>
+          </div>
+
+          <button id="clear-filters" >Clear Filters</button>
+        </aside>
+
+        <div>
+
+          <div class="products" id="products"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>About SugarCrumb</h2>
+      <div class="about">
+        <div>
+          <p style="margin:0 0 10px 0">At <strong>SugarCrumb</strong>, we believe every celebration deserves a handcrafted centrepiece. Founded by a duo of pastry lovers, our mission is to spread sweetness through thoughtful ingredients, sustainable packaging, and recipes passed down with a modern twist.</p>
+          <p style="margin:0">We source local dairy, organic flour and seasonal fruit whenever possible. From intimate cupcakes to grand celebration cakes, every order is made with care.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2>Contact & Orders</h2>
+      <div class="contact-wrap">
+        <form class="contact-form" id="contact-form">
+          <label>Full name</label>
+          <input type="text" id="name" placeholder="Your name"><br><br>
+          <label>Email</label>
+          <input type="email" id="email" placeholder="you@domain.com"><br><br>
+		  <lable>Phone Number</lable>
+		  <input type="number" id="number" placeholder="Your Mobile Number"><br><br>
+          <label>Message / Order details</label>
+          <textarea id="message" rows="5" placeholder="Tell us what you'd like"></textarea>
+          <div style="display:flex; gap:8px; margin-top:10px">
+            <button class="submit-btn" type="submit">Send Message</button>
+          </div>
+        </form>
+
+        <aside style="background:#fff; padding:18px; border-radius:12px">
+          <h2>Quick contact</h2><br>
+          <p style="margin:6px 0">WhatsApp: <a href="https://wa.me/1234567890" target="_blank">+9876543210</a></p>
+          <p style="margin:6px 0">Email: <a href="mailto:orders@sweetest.example.com">orders@sugarcrumb.com</a></p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div style="font-weight:700">SugarCrumb</div>
+        <div style="color:var(--muted)">Handcrafted cakes & cookies made with love. Soft, moist, and brusting with flavor to brighten your day!</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PayPal SDK (demo client id 'sb' works in sandbox) -->
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"></script>
+  <script src="script.js"></script>
+</body>
+</html>

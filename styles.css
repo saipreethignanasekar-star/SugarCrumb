@@ -1,0 +1,68 @@
+:root{
+  --cream:#f9efe9;
+  --pink:#f7c6d3;
+  --rose:#eaa6b9;
+  --brown:#7b5a47;
+  --muted:#9a8c82;
+  --glass: rgba(255,255,255,0.6);
+  --radius:18px;
+  --shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; font-family:Inter,system-ui,Segoe UI,Arial; background:linear-gradient(180deg,var(--cream),#fff 60%);
+  color:var(--brown); -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  -webkit-tap-highlight-color:transparent;
+}
+
+/* ---------- Header ---------- */
+header.site-header{
+  position:sticky; top:0; z-index:60; backdrop-filter: blur(6px);
+  background: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.5));
+  border-bottom: 1px solid rgba(123,90,71,0.06);
+}
+.nav{max-width:1200px; margin:0 auto; display:flex; align-items:center; gap:16px; padding:14px 20px;}
+.brand{display:flex; gap:12px; align-items:center}
+.logo{
+  font-family: 'Playfair Display', serif; font-weight:700; color:var(--brown); font-size:22px; letter-spacing:1px;
+}
+.tag{font-size:12px;color:var(--muted)}
+nav.main-nav{margin-left:auto; display:flex; gap:10px; align-items:center}
+nav.main-nav a{color:var(--brown); text-decoration:none; padding:8px 12px; border-radius:12px; font-weight:600}
+nav.main-nav a:hover{background:var(--glass)}
+.cta{background:var(--pink); color:#fff; padding:8px 14px; border-radius:14px; box-shadow:var(--shadow);}
+
+/* ---------- Hero / Home ---------- */
+.hero{max-width:1200px; margin:28px auto 8px; display:grid; grid-template-columns:1fr 420px; gap:28px; padding:0 20px}
+.hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(247,198,211,0.06)); border-radius:var(--radius); padding:28px; box-shadow:var(--shadow)}
+.hero h1{font-family:'Playfair Display', serif; margin:0; font-size:40px; color:var(--brown)}
+.hero p.lead{color:var(--muted); margin-top:10px; line-height:1.6}
+.featured-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:20px}
+
+.product-tile img{width:100%; height:140px; object-fit:cover; display:block}
+.product-tile .meta{position:absolute; left:12px; bottom:12px; background:rgba(0,0,0,0.5); color:#fff; padding:8px 10px; border-radius:10px; font-size:13px}
+
+/* ---------- Shop ---------- */
+.section{max-width:1200px; margin:34px auto; padding:0 20px}
+.shop-wrap{display:grid; grid-template-columns:260px 1fr; gap:22px}
+.filters{background:#fff; padding:18px; border-radius:14px; box-shadow:var(--shadow)}
+.filters h3{margin:0 0 10px 0}
+.filter-group{margin-bottom:12px}
+.filter-group label{display:block; font-size:13px; margin-bottom:6px}
+.range{width:100%}
+
+.products{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+.card{background:#fff}
+.card img{width:100%; height:170px; object-fit:cover}
+.card-body{padding:12px;  gap:8px}
+.price-row{display:flex; align-items:center; }
+.price{font-weight:700; color:var(--brown)}
+.add-btn{background:linear-gradient(90deg,var(--rose),var(--pink)); border:none; padding:8px 10px; border-radius:10px; color:#fff}
+
+/* ---------- Contact ---------- */
+.contact-wrap{display:grid; grid-template-columns:1fr 380px; gap:18px}
+.contact-form{background:#fff; padding:18px; border-radius:12px}
+.form-row{display:flex; gap:10px}
+.form-row input, textarea{flex:1; padding:10px; border-radius:10px; border:1px solid #efe5e2}
+.submit-btn{background:var(--brown); color:#fff; border:none; padding:10px 14px; border-radius:12px; cursor:pointer}
